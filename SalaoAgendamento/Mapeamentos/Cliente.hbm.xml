@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="SalaoAgendamento" 
+                   namespace="SalaoAgendamento.Entidades">
+  <class name="Cliente">
+    <id name="idCliente">
+      <generator class="identity"></generator>
+    </id>
+    <property name="Nome"></property>
+    <property name="Apelido"></property>
+    <property name="Data_Nasc"></property>
+    <property name="Sexo"></property>
+    <property name="Observacao"></property>
+    <property name="Telefone1"></property>
+    <property name="Telefone2"></property>
+
+  </class>
+</hibernate-mapping>
