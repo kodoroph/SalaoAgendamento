@@ -17,15 +17,18 @@ namespace SalaoAgendamento.DAO
         }
         public void Adiciona(Cliente cliente)
         {
-            ITransaction transacao = session.BeginTransaction();
             session.Save(cliente);
-            transacao.Commit();
         }
         public Cliente BuscaPorId(int id)
         {
             return session.Get<Cliente>(id);
         }
 
+        public void Apagar(int id)
+        {
+            Cliente cliente = session.Get<Cliente>(id);
+            session.Delete(cliente);
+        }
 
     }
 }

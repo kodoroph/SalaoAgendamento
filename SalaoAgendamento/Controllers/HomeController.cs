@@ -12,7 +12,7 @@ namespace SalaoAgendamento.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            Infra.NHibernateHelper.GeraSchema();
+            //Infra.NHibernateHelper.GeraSchema();
             return View();
         }
     }
